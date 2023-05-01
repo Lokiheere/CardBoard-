@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Nav-bar.css">    
+    <link rel="stylesheet" href="css/Hub.css">
+    <script defer src="js/Products.js"></script>
+    <script defer src="js/Hub.js"></script>
+    <script defer src="js/Search.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="icon" href="img/Website Icon.png" type="image/png">
+    <title>CardBoard Hub</title>
+</head>
+<body>
+  <div class="nav-bar">
+    <a href="index.html"><img class="logo" src="img/CardBoard-small.png" alt="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutUs.html">About</a></li>        
+        <li class="search">
+          <button class="clear-btn"><i class="fas fa-times-circle"></i></button>
+          <input type="text" placeholder="Search">
+          <ul class="dropdown"></ul>
+        </li>
+        <li><button class="Moblie-Search" onclick="showDiv()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+        <li><a href="AboutUs.html" class="Moblie-Search"><i class="fa-solid fa-question"></i></a></li>
+      </ul>
+    </nav>  
+  </div>
+  <div class="Nav-Search">
+    <nav>
+      <ul>
+        <li class="search">
+          <button class="clear-btn" id="clear-btn"><i class="fas fa-times-circle"></i></button>
+          <input type="text" placeholder="Search">
+          <ul class="dropdown"></ul>
+        </li>
+        <li><button class="Close-Mobile" onclick="closeDiv()"><i class="fa-solid fa-x"></i></button></li>
+      </ul>
+    </nav>
+  </div>  
+  <div class="Mobile-Dropdown"></div>
+  <section class="container"> 
+    <div class="background1"><p>Welcome to Cardboard, here you can inform yourself about the game.</p></div>
+    <form class="filter">
+      <div class="item">
+        <select name="category">
+          <option value="">Type</option>
+          <option value="cardGame">Card Game</option>
+          <option value="boardGame">Board Game</option>
+          <option value="About">About Us</option>
+        </select>
+      </div>
+      <div class="item">
+        <select name="AmountOfPlayers">
+          <option value="">Amount of Players</option>
+          <option value="2 player">2 players</option>
+          <option value="3-4 player">3-4 players</option>
+          <option value="5-6 player">5-6 players</option>
+          <option value="party">Party</option>
+        </select>
+      </div>
+      <div class="item">
+        <input name="name" type="text" placeholder="Search Here">
+      </div>
+    </form>
+    <div class="countResults">
+      Found <b id="count"></b> results
+    </div>
+    <div id="list" class="my-div"></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/All-Will-Look.css">
+    <link rel="stylesheet" href="css/AboutUs.css">
+    <link rel="stylesheet" href="css/Nav-bar.css">    
+    <link rel="icon" href="img/Website Icon.png" type="image/png">
+    <script defer src="js/transition.js"></script>
+    <script defer src="js/Products.js"></script>
+    <script defer src="js/Search.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="icon" href="img/Website Icon.png" type="image/png">
+    <title>About Us CardBoard</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html"><img class="logo" src="img/CardBoard-small.png" alt="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>        
+            <li class="search">
+              <button class="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Moblie-Search" onclick="showDiv()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            <li><a href="AboutUs.html" class="Moblie-Search"><i class="fa-solid fa-question"></i></a></li>
+          </ul>
+        </nav>  
+    </div>
+    <div class="Nav-Search">
+        <nav>
+          <ul>
+            <li class="search">
+              <button class="clear-btn" id="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Close-Mobile" onclick="closeDiv()"><i class="fa-solid fa-x"></i></button></li>
+          </ul>
+        </nav>
+    </div>  
+    <div class="Mobile-Dropdown"></div>
+    <div class="container">
+        <div class="background1">
+            <section class="AboutUs show hidden">
+                <img src="img/CardBoard-small.png" alt="IconofMonopoly">
+                <h2>About Us</h2>
+            </section>
+        </div>
+        <section class="instruction show hidden">
+            <h2>About Us</h2>
+            <h3>Who am I?</h3>
+            <div class="setup-list large">
+                <img src="img/AboutUs/Creator.jpg" alt="image_of_creator"/>
+            </div>
+            <p>Hey, this is Tawsif a high schooler who found themselves making this website out of sher fun. But also made this website out of his love for card and board games. How it all started? Well Tawsif was in his science class during lunch playing cardgames with his friends. And Tawsif was thinking an idea for his website. So he asked his science teacher who gave him an idea of helping people find a card or board game, while informing them on it. Tawsif haven't found a website that does that fully so he made this.</p>
+            <h3>What do we do?</h3>
+            <div class="setup-list large">
+                <img src="img/CardBoard-small.png" alt="image_of_creator"/>
+            </div>
+            <p>I made this website to help people find games to play with there family and friends. But to also inform them on how they work. You'll find instructions on how the game works but also links on where to get it or talk about it</p>
+        </section>
+        <div class="background2">
+            <section class="links show hidden">
+                <p>Nothing here...</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

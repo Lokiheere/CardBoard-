@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Nav-bar.css">    
+    <link rel="stylesheet" href="css/BS.css">
+    <link rel="stylesheet" href="css/All-Will-Look.css">
+    <script defer src="js/transition.js"></script>
+    <script defer src="js/Products.js"></script>
+    <script defer src="js/Search.js"></script>
+    <script src="https://kit.fontawesome.com/e3a18e07a1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/Website Icon.png" type="image/png">
+    <title>BS CardBoard</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html"><img class="logo" src="img/CardBoard-small.png" alt="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>        
+            <li class="search">
+              <button class="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Moblie-Search" onclick="showDiv()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            <li><a href="AboutUs.html" class="Moblie-Search"><i class="fa-solid fa-question"></i></a></li>
+        </ul>
+        </nav>  
+    </div>
+    <div class="Nav-Search">
+        <nav>
+          <ul>
+            <li class="search">
+              <button class="clear-btn" id="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Close-Mobile" onclick="closeDiv()"><i class="fa-solid fa-x"></i></button></li>
+          </ul>
+        </nav>
+    </div>  
+    <div class="Mobile-Dropdown"></div>
+    <div class="container">
+        <div class="background1">
+            <section class="About show hidden">
+                <h2>BS</h2>
+                <p>BS is a cardgame of deception with the cards being place face-down. Every player needs to get rid all cards. But there is times where a player lying call "BS" and watch eveything go down.</p>
+                <img src="img/BS/ShapeCards.png" alt="IconofMonopoly">
+            </section>
+        </div>
+        <section class="instruction show hidden">
+            <h2>Instruction</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fAaRpgAsokA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3>Requirements</h3>
+            <div class="center-list">
+                <ul>
+                    <li>Playing Cards</li>
+                    <li>At least 2 player or more</li>
+                </ul>  
+            </div>  
+            <h3>Set Up</h3>
+            <div class="center-list">
+                <li>Split  each card evenly to each player of any amount (No Jokers)</li>
+                <li>Any extra cards are put away</li>
+            </div>
+            <h3>How to Play?</h3>
+            <div class="setup-list large">
+                <img src="img/BS/klim-musalimov-8vUQfKI4aQc-unsplash.jpg" alt="NumberUno"/>
+                <ul>
+                    <li>Try to take turns in rotation</li>
+                    <li>The first person must put down 1 or more "Ace" facedown so no one sees what it is (Remember put down a card face down everytime)</li> 
+                    <li>Everyone has to announce what card they placed</li>
+                    <li>A person can lie on what card they place</li>
+                    <li>If you think someone is lying call BS (<a href="#BS">BS?</a>)</li>
+                    <li>The next person has to do the same thing but 1 up them until they have to rotate back to Ace (1 up them?)</li>
+                    <li>This processes repeats until someone runs out of cards</li>
+                </ul>  
+            </div>
+            <h3 id="BS">Calling BS</h3>
+            <div class="setup-list large">
+                <img src="img/BS/Card.jpg" alt="NumberUno"/>
+                <ul>
+                    <li>If you think someone is lying call "BS"</li>
+                    <li>Flip their card to see if they're lying</li>
+                    <li>If the person was lying they have to take the entire card pile</li>
+                    <li>If they said the truth you have to take the entire card pile</li>
+                </ul>  
+            </div>
+            <h3>The Card Order</h3>
+            <div>
+                <p>These are the order of each cards (Don't worry if its a Spade/Clover/Diamond/Heart)</p>
+                <ol>
+                    <li>Ace</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>Jack</li>
+                    <li>Queen</li>
+                    <li>King</li>
+                </ol>  
+            </div>
+        </section>
+        <div class="background2">
+            <section class="links show hidden">
+                <h2>Where to talk and buy</h2>
+                <h3>Where to talk</h3>
+                <a href="https://www.reddit.com/r/playingcards/" target="_blank">/r/Playing Cards</a>
+                <h3>Where to buy</h3>
+                <a href="https://www.walmart.com/search?q=playing+cards" target="_blank">Walmart</a>                
+                <a href="https://www.amazon.com/s?k=playing+cards&crid=2YOZKKCD361FE&sprefix=playing+cards%2Caps%2C121&ref=nb_sb_noss_2" target="_blank">Amazon</a>                
+            </section>
+        </div>
+    </div>
+</body>
+</html>

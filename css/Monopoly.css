@@ -1,0 +1,74 @@
+body {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.2)),url(../img/Monopolywallpaper.jpg);  
+    background-attachment: fixed;
+}
+
+.background1 {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.2)),url(../img/Monopolywallpaper.jpg);  
+    height: 120vh;
+}
+
+.background2 {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.2)),url(../img/Monopolywallpaper.jpg);  
+    height: 100%;
+    z-index: 1;
+}
+
+.About img {
+    max-width: 100%;
+    height: auto;
+}
+
+.instruction {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 768px;
+    box-sizing: border-box;
+} 
+
+.instruction h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Secular One', sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+.instruction p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Secular One', sans-serif;
+}
+  
+.setup-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+  
+.setup-list img {
+    margin-right: 200px; 
+}
+
+.setup-list ul {
+    margin: 0;
+    padding: 0;
+}
+ 
+.setup-list li {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.list-gap li {
+    margin-bottom: 20px;
+}

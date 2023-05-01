@@ -1,0 +1,121 @@
+body {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.2)),url("../img/CardBoard-1 (1).png");
+    background-color: black;
+    background-size: 25%;
+    background-attachment: fixed;
+}
+
+.background1 {
+    background-color: black;
+    background-size: 25%;
+    height: 70vh;
+}
+
+.background2 {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.2)),url("../img/CardBoard-1 (1).png");
+    background-color: black;
+    background-size: 25%;
+    height: 100%;
+    z-index: 1;
+}
+
+.About img {
+    max-width: 100%;
+    height: auto;
+}
+
+.AboutUs img {
+    max-width: 100%;
+    height: auto
+}
+
+.AboutUs {
+    display: block; 
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+    max-width: 768px;
+    width: 100%; 
+    height: auto
+}
+
+.instruction {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 768px;
+    box-sizing: border-box;
+} 
+
+.instruction h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Secular One', sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+.instruction p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Secular One', sans-serif;
+}
+
+.setup-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 250px;
+}
+  
+.setup-list img {
+    margin-right: 200px; 
+}
+  
+.setup-list ul {
+    margin: 0;
+    padding: 0;
+}
+ 
+.setup-list li {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.setup-list p {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.links {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Secular One', sans-serif;
+}
+
+/* For Mobile */
+@media screen and (max-width: 768px) {
+    .large img {
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-left: 80px;
+        border-radius: 10px;
+    }
+
+    .setup-list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}

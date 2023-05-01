@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Chess.css">
+    <link rel="stylesheet" href="css/All-Will-Look.css">
+    <link rel="stylesheet" href="css/Nav-bar.css">    
+    <script defer src="js/transition.js"></script>
+    <script defer src="js/Products.js"></script>
+    <script defer src="js/Search.js"></script>
+    <script src="https://kit.fontawesome.com/e3a18e07a1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/Website Icon.png" type="image/png">
+    <title>Chess CardBoard</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html"><img class="logo" src="img/CardBoard-small.png" alt="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>        
+            <li class="search">
+              <button class="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Moblie-Search" onclick="showDiv()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            <li><a href="AboutUs.html" class="Moblie-Search"><i class="fa-solid fa-question"></i></a></li>
+        </ul>
+        </nav>  
+    </div>
+    <div class="Nav-Search">
+        <nav>
+          <ul>
+            <li class="search">
+              <button class="clear-btn" id="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Close-Mobile" onclick="closeDiv()"><i class="fa-solid fa-x"></i></button></li>
+          </ul>
+        </nav>
+    </div>  
+    <div class="Mobile-Dropdown"></div>
+    <div class="container">
+        <div class="background1">
+            <section class="About show hidden">
+                <h2>Chess</h2>
+                <p>Chess is a strategic 2 player boardgame in which both players compete to capture their opponent's king.  </p>
+                <img src="img/Chess/Pawnlcon.png" alt="Pawn">
+            </section>
+        </div>
+        <section class="instruction show hidden">
+            <h2>Instruction</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OCSbzArwB10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>  
+            <h3>Requirements</h3>
+            <div class="setup-list small">
+                <img src="img/Chess/ChessSetup.png" alt="NumberUno"/>
+                <ul>
+                    <li>2 players needed</li>
+                </ul>  
+            </div>
+            <h3>Set Up</h3>
+            <div class="setup-list large">
+                <img id="chessSetupImg" src="img/Chess/ChessSetup.png" alt="ChessSetup"/>
+                <ul>
+                    <li>Your board is a 8x8 square with files and ranks</li>
+                    <li>Files represent in an x-axis, while ranks represent in a y-axis</li>
+                    <li>And to be sure that it's in the right direction check the side of the board as it must have a light square in the bottom right corner (If not try to turn it until its a light square)</li>
+                    <li>How the pieces are set up look at the image example (Queens are in their own color square)</li>
+                </ul>
+            </div>
+            <h3>How to Play?</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Checkmate.png" alt="NumberUno"/>
+                <ul>
+                    <li>Your goal is to checkmate the opponent King</li>
+                    <li>A checkmate is when a King does not have any ways to prevent itself from being captured</li>
+                    <li>Seen in the example image the king doesn't have anyways to prevent itself from being captured <br> (<a href="#Capture">Red represents capture areas</a>)</li>
+                </ul>  
+            </div>
+            <div class="setup-list large">
+                <img src="img/Chess/Draw.png" alt="NumberUno"/>
+                <ul>
+                    <li>But there is another outcome from the game that being a draw</li>
+                    <li>A draw is when an opponent doesn't have any legal moves</li>
+                    <li>For example the image shows that the black king doesn't have anywhere else to go</li>
+                    <li>But it isn't in the piece capture radius</li>
+                </ul>  
+            </div>
+            <h3>Pawn</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Pawn.png" alt="NumberUno"/>
+                <ul>
+                    <li>The pawn can only move 1 square</li>
+                    <li>The pawn can also move 2 squares only on its first move (Beware <a href="#Enpassant">En Passant</a>)</li>
+                    <li>The Pawn can attack forward diagonally in one square</li>
+                    <li>Once it makes it to the end it can become any piece (except the King)</li>
+                </ul>  
+            </div>
+            <h3>Bishop</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Bishop.png" alt="SkipUno"/>
+                <ul>
+                    <li>Can move and attack diagonally in a infinite range</li>
+                </ul>  
+            </div>
+            <h3>Rook</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Rook.png" alt="ReverseUno"/>
+                <ul>
+                    <li>Can move and attack horizontally and vertically in a infinite range</li>
+                </ul>  
+            </div>
+            <h3>Knight</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Knight.png" alt="+2Uno"/>
+                <ul>
+                    <li>Can move and attack in a L position</li>
+                    <li>But only at the end of the L seen in the example image</li>
+                    <li>It's the only piece that can jump over other pieces</li>
+                </ul>  
+            </div>
+            <h3>Queen</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Queen.png" alt="+2Uno"/>
+                <ul>
+                    <li>The queen is the most powerful piece in your board</li>
+                    <li>Can move and attack diagonally; horizontally; vertically in a infinite range</li>
+                </ul>   
+            </div>
+            <h3>King</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/King.png" alt="+4Uno"/>
+                <ul>
+                    <li>The king is your most valuable piece</li>
+                    <li>As losing it can cost you your entire game</li>
+                    <li>Can move and attack diagonally; horizontally; vertically but its range can only extend to one square </li>
+                </ul>  
+            </div>
+            <h3>Check</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Check.gif" alt="SkipUno"/>
+                <ul>
+                    <li>If the King is being attacked move your King away from danger at all cost</li>
+                    <li>Or you can block the sight of the opponent piece (<a href="#Block">Block?</a>)</li>
+                </ul>  
+            </div>
+            <h3 id="Capture">Capture</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Capture.gif" alt="SkipUno"/>
+                <ul>
+                    <li>In order to capture a piece the piece must be in the line of sight</li>
+                    <li>When it is move your piece toward that square that the piece you captured once stood</li>
+                </ul> 
+            </div>
+            <h3 id="Block">Block/Protect</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Block.png" alt="SkipUno"/>
+                <ul>
+                    <li>Other pieces can block a piece from attacking a certain area</li>
+                    <li>But this can create protection if its your piece that blocking</li>
+                    <li>When looking at this image, if a piece where to capture the Knight the Rook can come in and take its place</li>
+                </ul>  
+            </div>
+            <h3>Castle</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/Castle.gif" alt="SkipUno"/>
+                <ul>
+                    <li>A castle is when the King moves two square to the right or left and the Rook is also in front of the King (All of this is in one move as seen in the gif)</li>
+                    <li>Times you can't castle though:<br>
+                        If the Rook you want to castle with already moved;<br>
+                        If the King moved;<br>
+                        If the area of the castle is being attacked
+                    </li>
+                </ul>  
+            </div>
+            <h3 id="Enpassant">en passant</h3>
+            <div class="setup-list large">
+                <img src="img/Chess/En passant.gif" alt="SkipUno"/>
+                <ul>
+                    <li>Is when the pawn capture a pawn that moved 2 squares ahead</li>
+                    <li>You can only do this move if the opponent moved its pawn just now and after that you can't do it in any later turns</li>
+                </ul>  
+            </div>
+        </section>
+        <div class="background2">
+            <section class="links show hidden">
+                <h2>Where to play, talk and buy</h2>
+                <h3>Apps</h3>
+                <a href="https://www.chess.com" target="_blank">Chess.com</a>
+                <a href="https://lichess.org" target="_blank">lichess.org</a>
+                <a href="https://www.chess.com/play/apps" target="_blank">Mobile</a>
+                <h3>Where to talk</h3>
+                <a href="https://www.reddit.com/r/AnarchyChess/" target="_blank">/r/AnarchyChess</a>
+                <a href="https://www.reddit.com/r/chess/" target="_blank">/r/chess</a>
+                <h3>Where to buy</h3>
+                <a href="https://www.amazon.com/s?k=Chess&crid=206ZQJ5RI4BVW&sprefix=chess%2Caps%2C212&ref=nb_sb_noss_2" target="_blank">Amazon</a>
+                <a href="https://www.walmart.com/search?q=chess&affinityOverride=default&min_price=66" target="_blank">Walmart</a>
+
+            </section>
+        </div>
+    </div>
+</body>
+</html>

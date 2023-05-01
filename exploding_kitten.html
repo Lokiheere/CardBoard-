@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exploding_kitten.css">
+    <link rel="stylesheet" href="css/All-Will-Look.css">    
+    <link rel="stylesheet" href="css/Nav-bar.css">    
+    <script defer src="js/transition.js"></script>
+    <script defer src="js/Products.js"></script>
+    <script defer src="js/Search.js"></script>
+    <script src="https://kit.fontawesome.com/e3a18e07a1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/Website Icon.png" type="image/png">
+    <title>Exploding Kittens CardBoard</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html"><img class="logo" src="img/CardBoard-small.png" alt="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>        
+            <li class="search">
+              <button class="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Moblie-Search" onclick="showDiv()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            <li><a href="AboutUs.html" class="Moblie-Search"><i class="fa-solid fa-question"></i></a></li>
+        </ul>
+        </nav>  
+    </div>
+    <div class="Nav-Search">
+        <nav>
+          <ul>
+            <li class="search">
+              <button class="clear-btn" id="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Close-Mobile" onclick="closeDiv()"><i class="fa-solid fa-x"></i></button></li>
+          </ul>
+        </nav>
+    </div>  
+    <div class="Mobile-Dropdown"></div>
+    <div class="container">
+        <div class="background1">
+            <section class="About show hidden">
+                <h2>Exploding Kittens</h2>
+                <p>Exploding Kittens is card game in which players draw cards until someone draws an Exploding Kitten and are out of the game unless they have a defuse. This game is a lot like russian roulette but except the lethal part.</p>
+                <img src="img/Exploding/IconExplodingKitten.jpg" alt="IconofMonopoly">
+            </section>
+        </div>
+        <section class="instruction show hidden">
+            <h2>Instruction</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kAkRKuv5Rts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+            </div>
+            <h3>Requirements</h3>
+            <div class="center-list">
+                <ul>
+                    <li>2-5 players needed</li>
+                </ul>  
+            </div>      
+            <h3>Set Up</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/expolding-kitten.png" alt="NumberUno"/>
+                <ul>
+                    <li>To start, remove all the Exploding Kittens (4) from the deck and set them aside (<a href="#exploding">Exploding Kittens?</a>)</li>
+                    <li>Remove all of the Defuse Cards (6) from the deck and deal 1 to each player (<a href="#defuse">Defuse Cards?</a>)</li>
+                    <li>Insert the extra Defuse Card(s) back into the deck</li>
+                    <li>Shuffle the deck and deal 7 cards face down to each player. Everyone now has a hand of 8 cards total. (7 cards + 1 defuse).</li>
+                    <li>Look at your cards but keep them secert.</li>
+                    <li>Insert enough Exploding Kittens back into the deck so that there is 1 fewer than the number of people playing</li>
+                    <li>Remove any extra Exploding Kittens from the game</li>
+                    <li>Shuffle the deck, and put it face down in the middle of the table (Also make space for a discard pile)</li>
+                    <li>Pick a player to go first. (Some sample criteria: most excited to go first, most intimidating odor, shortest spleen, etc)</li>
+                    <li>Oh yeah do your turns clockwise...</li>
+                </ul>  
+            </div>
+            <h3>How to Play?</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/CatBomb.png" alt="NumberUno"/>
+                <ul>
+                    <li>Gather all 8 of your card from your hand by placing it FACE UP on top of the Discard Pile.</li>
+                    <li>Follow the instructions on the card (<a href="#card">Cards?</a>)</li>
+                    <li>Or you can just play no cards</li>
+                    <li>End your turn by drawing a card from the top of the Draw Pile into your hand and hoping it's not an Expolding Kitten.</li>
+                    <li>(Remember play as many or as few cards as you'd like, then draw a card to end your turn)</li>
+                    <li>Play continues clockwise around the table.</li>
+                    <li>Eventually every player will expolde expect for one, who wins the game!</li>
+                    <li>You won't ever run out of cards in the Draw Pile because you inserted enough Exploding Kittens to kill all but 1 player</li>
+                </ul>  
+            </div>
+            <h3 id="exploding">Exploding Kitten</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/ExplodingCard.png" alt="NumberUno"/>
+                <ul>
+                    <li>You must show this card immediately</li>
+                    <li>Unless you have a Defuse Card, you're dead</li>
+                    <li>Discard all of your cards, including the Exploding Kitten</li>
+                </ul>  
+            </div>
+            <h3 id="defuse">Defuse Card</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/DefuseCard.png" alt="SkipUno"/>
+                <ul>
+                    <li>If you drew an Exploding Kitten, you can play this card instead of dying</li>
+                    <li>Place your Defuse Card in the Discard Pile</li>
+                    <li>Then take the Exploding Kitten, and without reordering or viewing the other cards, secretly put it back in the Draw Pile anywhere you'd like</li>
+                </ul>  
+            </div>
+            <h3>Attack Card</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/KitAttackCard.jpg" alt="ReverseUno"/>
+                <ul>
+                    <li>Do not draw any cards</li>
+                    <li>Instead, immediately force the next player to take 2 turns in a row</li>
+                    <li>Play then countinues from that player</li>
+                    <li>The victem of this card takes a turn as normal but then, when their first turn is over, it's their turn again</li>
+                    <li>If the victem of an Attack Card plays an Attack Card on any of their turns</li> 
+                    <li>The new target must take any remaining turns plus the number of attacks on the Attack Card just played</li>
+
+                </ul>  
+            </div>
+            <h3>Favour Card</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/KitFavourCard.jpg" alt="+2Uno"/>
+                <ul>
+                    <li>Force any other player to give you 1 card from their hand. They choose which card to give you</li>
+                </ul>  
+            </div>
+            <h3>See The Future Card</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/KitFutureCard.jpg" alt="+2Uno"/>
+                <ul>
+                    <li>Privately view the top 3 cards from the Draw Pile and put them back in the same order</li>
+                    <li>Don't show the cards to the other players</li>
+                </ul>  
+            </div>
+            <h3 id="card">Nope Card</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/KitNopeCard.jpg" alt="+4Uno"/>
+                <ul>
+                    <li>Stop any action except for an Exploding Kitten or a Defuse Card</li>
+                    <li>Imagine that any card beneath a Nope Card never existed</li>
+                    <li>A Nope can also be played on another Nope to negate it</li>
+                </ul>  
+            </div>
+            <h3>Blank Cards</h3>
+            <div class="setup-list small">
+                <img src="img/Exploding/KitShuffleCard.png" alt="Blank"/>
+                <ul>
+                    <li>Shuffle the Draw Pile thoroughly. (Useful when you know there's an Exploding Kitten coming)</li>
+                </ul>  
+            </div>
+            <div class="setup-list small">
+                <img src="img/Exploding/KitSkipCard.jpg" alt="Blank"/>
+                <ul>
+                    <li>Immediately end your turn without drawinf a card</li>
+                    <li>If you play a Skip Card as a defense to an Attack Card, it only ends 1 of the 2 turns. 2 Skip Cards would end both turns</li>
+                </ul>  
+            </div>
+            <div class="setup-list small">
+                <img src="img/Exploding/KitCatCard.png" alt="Blank"/>
+                <ul>
+                    <li>These cards are powerless on their own, but if you collect any 2 matching Cat Cards</li> 
+                    <li>You can play them as a Pair to steal a random card from any player</li>
+                    <li>They can also be used in Special Combos</li>
+                </ul>  
+            </div>
+        </section>
+        <div class="background2">
+            <section class="links show hidden">
+                <h2>Where to chat and buy</h2>                
+                <h3>Where to chat</h3>
+                <a href="https://www.reddit.com/r/ExplodingKittens/"  target="_blank">/r/ExplodingKittens</a>
+                <h3>Where to buy</h3>
+                <a href="https://www.explodingkittens.com/products/exploding-kittens-original-edition?nosto=frontpage-nosto-1" target="_blank">Offical Website</a>
+                <a href="https://www.walmart.com/ip/Exploding-Kittens-Original-Edition-Card-Game-Party-Game-15-Mins-Ages-7-And-Up-2-5-Players/48752470?athbdg=L1600&from=searchResults" target="_blank">Walmart</a>
+                <a href="https://www.amazon.com/Exploding-Kittens-Party-Pack-Players/dp/B010TQY7A8/ref=sr_1_2?keywords=exploding%2Bkittens&qid=1681092499&sprefix=exploding%2Caps%2C115&sr=8-2&th=1" target="_blank">Amazon</a>                
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Monopoly.css">
+    <link rel="stylesheet" href="css/All-Will-Look.css">
+    <link rel="stylesheet" href="css/Nav-bar.css">    
+    <script defer src="js/transition.js"></script>
+    <script defer src="js/Products.js"></script>
+    <script defer src="js/Search.js"></script>
+    <script src="https://kit.fontawesome.com/e3a18e07a1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/Website Icon.png" type="image/png">
+    <title>Monopoly CardBoard</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html"><img class="logo" src="img/CardBoard-small.png" alt="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>        
+            <li class="search">
+              <button class="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Moblie-Search" onclick="showDiv()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            <li><a href="AboutUs.html" class="Moblie-Search"><i class="fa-solid fa-question"></i></a></li>
+        </ul>
+        </nav>  
+    </div>
+    <div class="Nav-Search">
+        <nav>
+          <ul>
+            <li class="search">
+              <button class="clear-btn" id="clear-btn"><i class="fas fa-times-circle"></i></button>
+              <input type="text" placeholder="Search">
+              <ul class="dropdown"></ul>
+            </li>
+            <li><button class="Close-Mobile" onclick="closeDiv()"><i class="fa-solid fa-x"></i></button></li>
+          </ul>
+        </nav>
+    </div>  
+    <div class="Mobile-Dropdown"></div>
+    <div class="container">
+        <div class="background1">
+            <section class="About show hidden">
+                <h2>Monopoly</h2>
+                <p>Monopoly is a board game in which the player rolls a dice while moving around the board buying properties, Houses and Hotels. The main goal is to make others go bankrupt while trying to not to get bankrupt.</p>
+                <img src="img/Monopoly/Monopolyicon.png" alt="IconofMonopoly">
+            </section>
+        </div>
+
+        <section class="instruction show hidden">
+            <h2>Instruction</h2>
+
+            <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AuWvMgYv03g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>  
+
+            <h3>Requirements</h3>
+            <div class="center-list">
+                <ul>
+                    <li>2-10 players needed</li>
+                </ul>  
+            </div>
+
+            <h3>Set Up</h3>
+            <p class="center-text">Choose someone to be the Banker</p>
+            <ul>
+                <li>The Banker is in charge of: 
+                    <ul>
+                        <li>The Bank's money</li>
+                        <li>Houses</li>
+                        <li>Hotels</li>
+                        <li>Title Deed cards</li>
+                        <li>Auctions</li>
+                    </ul>
+                </li>
+                <li>The banker can play too but must keep their money separate from the Bank</li>
+            </ul>
+
+            <p class="center-text">Banker, give each player:</p>
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/MonoBil1.jpg" alt="MonoBil1">
+                <ul>
+                    <li>x5</li>
+                </ul>  
+            </div>  
+
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/MonoBil5.jpg" alt="MonoBil5">
+                <ul>
+                    <li>x1</li>
+                </ul>  
+            </div> 
+
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/MonoBil10.jpg" alt="MonoBil10">
+                <ul>
+                    <li>x2</li>
+                </ul>  
+            </div> 
+
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/MonoBil20.jpg" alt="MonoBil20">
+                <ul>
+                    <li>x1</li>
+                </ul>  
+            </div> 
+
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/MonoBil50.jpg" alt="MonoBil50">
+                <ul>
+                    <li>x1</li>
+                </ul>  
+            </div> 
+
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/MonoBill100.jpg" alt="MonoBil100">
+                <ul>
+                    <li>x4</li>
+                </ul>  
+            </div> 
+
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/MonoBil500.jpg" alt="MonoBil500">
+                <ul>
+                    <li>x2</li>
+                </ul>  
+            </div> 
+
+            <p class="center-text">Tokens</p>
+            <div class="setup-list small">
+                <img src="img/Monopoly/Tokens.png" alt="Tokens">
+                <ul>
+                    <li>Each player chooes a token and places it on GO</li>
+                </ul> 
+            </div>
+
+            <p class="center-text">Community Chest/Chance Cards</p>
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/ChestCommun.jpg" alt="Chest">
+                <ul>
+                    <li>Shuffle the Commmunity Chest cards, and place them facedown here (<a href="#Community/Chance">Community?</a>)</li>
+                </ul> 
+            </div> 
+
+            <div class="setup-list small shadow">
+                <img src="img/Monopoly/Chance.jpg" alt="Chance">
+                <ul>
+                    <li>Shuffle the Chance cards, and place them face down here (<a href="#Community/Chance">Chance?</a>)</li>
+                </ul> 
+            </div>
+
+            <h3>How to Play?</h3>
+            <div class="setup-list small">
+                <img src="img/Monopoly/Monopoly Man.png" alt="Monopoly Man">
+                <ul>
+                    <li>Move around the board buying as many properties as you can (<a href="#property">property?</a>)</li>
+                    <li>The more you own, the more rent you'll be able to collect from other players</li>
+                    <li id="property">If you're the last player with money when all other players have gone bankrupt, you win!</li>
+                </ul>  
+            </div>
+
+            <div class="center-list">
+                <ul>
+                    <li>Each player rolls both dice</li>
+                    <li>The highest roller starts, and play moves to the left</li>
+                    <li>On your turn roll both dice (<a href="#Dice">Dice?</a>)</li>
+                    <li>Move your token clockwise that number of spaces</li>
+                    <li>Where did you land? Carry out the rules of that board space (SEE THE BOARD SPACES.)</li>
+                    <li>Your turn ends, pass the dice to the left</li>
+                </ul>  
+            </div>
+
+            <h3>Properties</h3>
+            <div class="center-list">
+                <ul>
+                    <li>There are three types of properties: Streets (which come in color sets), Railroads, and Utilities</li>
+                    <li>When you land on an unowned Street, Railroad, or Utility, you must buy it or auction it</li>
+                    <li>If buy, pay the price on the board space, and take the Title Deed card from the Bank</li>
+                    <li>If not buy The Banker must auction it</li>
+                    <li>Bidding starts at $10, and anyone can increase the bid by as little as $1</li>
+                    <li>You don't need to follow order, and the Banker ends the auction when no player is willing to increase the bid</li>
+                    <li>If no one wants to bid on the property, that's fine no one pays anything, and the Title Deed stays with the Bank</li>
+                </ul>  
+            </div>
+
+            <h3>Color Sets</h3>
+            <div class="center-list">
+                <ul>
+                    <li>When you own each street in a color set:
+                        <ul>
+                            <li>You can double the rent for those Streets!</li>
+                            <li>You may build Houses and Hotels and charge even more rent!(SEE BUILDINGS)</li>
+                        </ul>
+                    </li>
+                </ul>  
+            </div>
+
+            <h3>Owned Properties</h3>
+            <div class="center-list">
+                <ul>
+                    <li>When you land on a property that someone else owns, the owner must ask you for rent</li>
+                    <li>If they do, you must pay</li>
+                    <li>If they don't ask before the next player rolls the dice, you don't have to pay</li>
+                </ul>  
+            </div>
+
+            <p class="center-text">Streets</p>
+            <div>
+                <ul>
+                    <li id="Dice">Pay the rent shown on the Street's Title Deed card</li>
+                </ul>
+            </div>
+
+            <p class="center-text">Railroads</p>
+            <div>
+                <ul>
+                    <li>Pay rent based on the number of Railroads the owner has</li>
+                </ul>
+            </div>
+
+            <p class="center-text">Utilities</p>
+            <div>
+                <ul>
+                    <li>Roll the dice to determine rent</li>
+                    <li>If the owner has 1 Utility rent is 4x the dice roll</li>
+                    <li>If the owner has 2 Utilities, rent is 10x the dice roll</li>
+                </ul>
+            </div>
+
+            <h3>Dice</h3>
+            <div class="setup-list small">
+                <img src="img/Monopoly/Dice.png" alt="Dice">
+                <ul>
+                    <li>If roll 2 of the same numebrs they get a another turn</li>
+                    <li>This means that when they're turn ends its there turn again</li>
+                    <li id="Community/Chance">But if they roll 2 of the same numbers again they go to jail</li>
+                </ul>  
+            </div>
+
+            <h3>GO</h3>
+            <div class="center-list">
+                <ul>
+                    <li>When you pass or land on the GO pace, collect $200 from the Bank</li>
+                </ul>  
+            </div>
+
+            <h3>Community Chest/Chance</h3>
+            <div class="center-list">
+                <ul>
+                    <li>Take the top card from the matching deck, and immediately do what it says</li>
+                    <li>Return it to the bottom of the deck when done</li>
+                </ul>  
+            </div>
+
+            <h3>Income/Luxury Tax</h3>
+            <div class="center-list">
+                <ul>
+                    <li>Pay the Bank the amount shown on the space</li>
+                </ul>  
+            </div>
+
+            <h3>Free Parking</h3>
+            <div class="center-list">
+                <ul>
+                    <li>Relax! Nothing happens</li>
+                </ul>  
+            </div>
+
+            <h3>Just Visiting</h3>
+            <div class="center-list">
+                <ul>
+                    <li>Don't worry if you land here, put your token in the Just Visiting section</li>
+                </ul>  
+            </div>
+
+            <h3>Go To Jail</h3>
+            <div class="center-list">
+                <ul>
+                    <li>Move your token to the in Jail space immediately! Do not collect $200 for passing GO</li>
+                    <li>Your turn is then over but you can still collect rent, bid during auctions, buy Houses and Hotels, mortgage, and trade while you are In jail</li>
+                    <li>But in order to get out pay $50 at the start of your turn; then, roll and move as normal</li>
+                    <li>Or use a Get Out Of Jail Free card at the start of your next turn if you have one (or buy one from another player)</li>
+                    <li>Put the card at the bottom of the appropriate deck; then roll and move</li>
+                    <li>Or Roll a double on yout next turn if you do you're free!</li>
+                    <li>Use the roll to move, and that's the end of your turn<li>
+                    <li>You can try up yo 3 turns to try for a double</li>
+                    <li>If fail to roll a double in your thrid turn pay 50, and use your last roll to move</li>
+                </ul>  
+            </div>
+
+            <h3>Houses</h3>
+            <div class="center-list">
+                <ul>
+                    <li>As soon as you get a color set, you can start buying Houses (you don't have to wait for your turn)</li>
+                    <li>Pay the Bank the cost on the Title Deed card, and place a House on the Street</li>
+                    <li>You must build evenly as you cannot build a second House on a Street until you've built one on each Street in the set</li>
+                    <li>You can only have 4 Houses on a Street</li>
+                </ul>  
+            </div>
+
+            <h3>Hotels</h3>
+            <div class="center-list">
+                <ul>
+                    <li>Once you have 4 Houses on all Streets in a color set, you can pay to upgrade to a Hotel</li>
+                    <li>Pay the Hotel cost on the Title Deed card, return all 4 Houses to the Bank, and put a Hotel on the Street</li>
+                    <li>You can only have 1 Hotel per Street. You can't add more Houses</li>
+                    <li>You cannot build on a Street if any Street in its color set is mortgaged</li>
+                </ul>  
+            </div>
+
+            <h3>Not enough buildings?</h3>
+            <div class="center-list">
+                <ul>
+                    <li>If multiple players want to buy the last House or Hotel, the Banker must auction it. Bids start at $10 and anyone can increase the bid by as little as $1</li>
+                    <li>You don't need to follow turn order</li>
+                    <li>Payment goes to the Bank</li>
+                </ul>
+            </div>
+
+            <h3>No buildings left?</h3>
+            <div>
+                <ul>
+                    <li>You can't buy any until someone sells theirs back</li>
+                </ul>
+            </div>
+
+            <h3>Deals & Trades</h3>
+            <div class="list-gap">
+                <ul>
+                    <li>You can buy, sell, or swap property with other players at any time</li>
+                    <li>You must sell all buildings on a color set to the Bank before you can sell or trade a Street</li>
+                    <li>You cannot sell nor trade buildings to another player</li>
+                    <li>Property can be traded for cash, other property, and/ or Get Out Of Jail Free cards</li>
+                    <li>The amount is decided by the players making the deal</li>
+                    <li>Mortgaged property can be traded at any agreed-upon price</li>
+                    <li>The new owner must immediately:
+                        <ul>
+                            <li>Repay the mortgage (pay the Bank the unmortgage cost)</li>
+                            <li>Or keep the mortgage (just pay the Bank 10% of the mortgage value now)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <h3>Help! I can't pay</h3>
+            <div class="center-list">
+                <ul>
+                    <li>If you owe money and can't pay try to raise money by selling buildings back to the Bank and/or mortgaging properties</li>
+                    <li>Sell Hotels to the Bank for half the cost price and exchange them immediately for 4 Houses</li>
+                    <li>Sell Houses to the Bank for half the cost price and houses must be sold evenly across the color set</li>
+                </ul>  
+            </div>
+
+            <h3>Mortgaged Property</h3>
+            <div class="center-list">
+                <ul>
+                    <li>To mortgage, turn the TItle Deed card facedown, and collect the mortgage value on the back from the Bank</li>
+                    <li>To repay a mortgage, pay the unmortgage cost to the Bank (mortgage value +10%); then, turn the card faceup</li>
+                </ul>  
+            </div>
+            
+            <h3>Bankrupt</h3>
+            <div class="center-list">
+                <ul>
+                    <li>If you're still in debt, you are bankrupt and out of the game!</li>
+                    <li>Give the other players all your mortgage properties and any Get Out of Jail Free cards</li>
+                    <li>The new owner must immediately:
+                        <ul>
+                            <li>Repay the mortgage (Pay the Bank the unmortgage)</li>
+                            <li>Or keep the mortgage (Just pay the Bank 10% of the mortgage value now)</li>
+                        </ul>
+                    </li>
+                    <li>For the Bank return all your properties to the Bank (Any mortgages are cancelled)</li>
+                    <li>All your properties must immediately be put up for auction</li>
+                    <li>Return any Get Out of Jail Free cards to the bottom of the appropriate deck</li>
+                </ul>  
+            </div>
+        </section>
+        <div class="background2">
+            <section class="links show hidden">
+                <h2>Where to talk and buy</h2>
+                <h3>Where to talk</h3>
+                <a href="https://www.reddit.com/r/boardgames/" target="_blank">/r/boardgames</a>
+                <h3>Where to buy</h3>
+                <a href="https://hasbropulse.com/products/monopoly-game-1" target="_blank">Hasbro</a>
+                <a href="https://www.walmart.com/ip/Monopoly-Board-Game-Family-Board-Game-for-2-to-6-Players/670964901?athbdg=L1200&from=searchResults" target="_blank">Walmart</a>
+                <a href="https://www.amazon.com/Monopoly-Family-Board-Players-Tokens/dp/B0B5HLZ8T4/ref=sr_1_8?crid=3MFAIH1BW4KBU&keywords=monopoly&qid=1681059928&sprefix=monopoly+%2Caps%2C100&sr=8-8" target="_blank">Amazon</a>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
