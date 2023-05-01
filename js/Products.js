@@ -60,14 +60,4 @@ let listProducts = [
         imageWidth: '150px',
         description: 'UNO is a popular card game owned by Mattel, where the players has to place down a matching card until one person successfully loses all there cards.'
     },
-    {
-        id: 6,
-        name: 'About Us',
-        image: 'img/Cardboard-small.png',
-        link: 'AboutUs.html',
-        nature: {
-            type: 'About'
-        },
-        imageWidth: '200px'
-    },
 ];
